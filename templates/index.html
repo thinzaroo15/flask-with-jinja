@@ -1,0 +1,15 @@
+<!DOCTYPTE html>
+<html>
+	<head><title>Flask with Jinja</title></head>
+<body>
+	<ul>
+		<li><img src="{{url_for('static',filename='cumdy_logo1.png')}}"></li>
+		{# This is comment block. We will set some variables in the jinja templat.#}
+		{% set name="Thinzar Oo"%}
+		<li>{{name}}</li>
+		<li><a href="https://github.com/thinzaroo15">GitHub</li>
+		<li><a href="https://thinzaroo15.herokuapp.com">Heroku</li>
+       </ul>
+</body>
+</html>
+
