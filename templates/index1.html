@@ -17,19 +17,19 @@
     <title>PWA Fire Codelab Demo PWA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="icons/pwafire192white.png">
+    <link rel="shortcut icon" href="{{url_for('static',filename='icons/pwafire192white.png')}}">
     <!-- start of web manifest -->
     <link rel="manifest" href="/manifest.json">
     <!-- end of web manifest -->
     <!-- theme-color -->
     <meta name="theme-color" content="#fff" />
     <!-- end-theme-color -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/respond.min.js"></script>
-    <script src="assets/js/responsive.js"></script>
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/skel.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/util.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/respond.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/responsive.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/main.css')}}" />
 </head>
 
 <body class="">
@@ -38,9 +38,9 @@
 
         <article id="home" class="panel special" style="display: flex;">
 
-            <div class="image" style="background-image: url(&quot;images/thinzaroo.jpg&quot;); background-position: center center;">
+		<div class="image" style="background-image: url(&quot;{{url_for('static',filename='images/thinzaroo.jpg')}}&quot;); background-position: center center;">
 
-                <img src="images/thinzaroo.jpg" alt="" data-position="center center" style="display: none;">
+			<img src="{{url_for('static',filename='images/thinzaroo.jpg')}}" alt="" data-position="center center" style="display: none;">
 
             </div>
 
@@ -99,8 +99,8 @@
 
         <article id="work" class="panel secondary inactive" style="display: none;">
 
-            <div class="image" style="background-image: url(&quot;images/thinzaroo1.jpg&quot;);background-position: center center;">
-                <img src="images/thinzaroo1.jpg" alt="" data-position="center center" style="display: none;">
+		<div class="image" style="background-image: url(&quot;{{url_for('static',filename='images/thinzaroo1.jpg')}}&quot;);background-position: center center;">
+			<img src="{{url_for('static',filename='images/thinzaroo1.jpg')}}" alt="" data-position="center center" style="display: none;">
             </div>
             <div class="content">
                 <ul class="actions spinX">
@@ -143,8 +143,8 @@
 
         <article id="about" class="panel secondary inactive" style="display: none;">
 
-            <div class="image" style="background-image: url(&quot;images/thinzaroo2.jpg&quot;); background-position: center center;">
-                <img src="images/thinzaroo2.jpg" alt="" data-position="center center" style="display: none;">
+		<div class="image" style="background-image: url(&quot;{{url_for('static',filename='images/thinzaroo2.jpg')}}&quot;); background-position: center center;">
+			<img src="{{url_for('static',filename='images/thinzaroo2.jpg')}}" alt="" data-position="center center" style="display: none;">
             </div>
 
             <div class="content">
@@ -186,9 +186,9 @@
 
         <article id="contact" class="panel secondary inactive" style="display: none;">
 
-            <div class="image" style="background-image: url(&quot;images/thinzaroo3.jpg&quot;); background-position: center bottom;">
+		<div class="image" style="background-image: url(&quot;{{url_for('static',filename='images/thinzaroo3.jpg')}}&quot;); background-position: center bottom;">
 
-                <img src="images/thinzaroo3.jpg" alt="" data-position="bottom center" style="display: none;">
+			<img src="{{url_for('static',filename='images/thinzaroo3.jpg')}}" alt="" data-position="bottom center" style="display: none;">
 
             </div>
             <div class="content">
@@ -253,8 +253,8 @@
         </footer>
 
     </div>
-    <script src="assets/js/buttons-navigate.js"></script>
-    <script src="assets/js/web-share.js"></script>
+    <script src="{{url_for('static',filename='assets/js/buttons-navigate.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/web-share.js')}}"></script>
 </body>
 </html>
 
